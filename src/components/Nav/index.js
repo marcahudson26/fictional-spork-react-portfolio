@@ -13,12 +13,12 @@ export default () => {
                 </span>
             </label>
             <nav id="menu">
-                <a href="#">About Me</a>
+                <Link to="/about">About Me</Link>
                 <a href="#">My Projects</a>
                 <a href="#">My Skills</a>
                 <a href="#">Contact Me</a>
-                <a href="#">My Github</a>
-                <a href="#">LinkedIn</a>
+                <a href="https://github.com/marcahudson26">My Github</a>
+                <a href="https://www.linkedin.com/in/marc-hudson-53546a259/">LinkedIn</a>
             </nav>
         </>
     )

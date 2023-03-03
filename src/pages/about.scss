@@ -1,0 +1,42 @@
+.abouthero {
+    h1 {
+        font-family: "Satisfy";
+        font-size: 30px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    >div {
+        background-image: url(../../public/profilepic.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 420px;
+        width: 700px;
+        margin: 0 auto;
+        padding: 250px 0px;
+        color: white;
+    }
+}
+
+.main {
+    background-color: black;
+    color: rgb(252, 249, 235);
+    padding-top: 1px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+
+.aboutlower {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    padding-top: 30px;
+    text-align: center;
+
+    img {
+        height: 150px;
+    }
+}

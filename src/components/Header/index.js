@@ -9,11 +9,7 @@ export default ({ children }) => {
         <header>
             {children}
             <Nav />
-            <div className="pause-play-wrapper">
-                <button className="pause-play" onClick={togglePlayHero}>
-                    {!playHero ? "Play" : "Pause"}
-                </button>
-            </div>
+
         </header>
     );
 };
