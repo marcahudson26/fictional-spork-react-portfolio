@@ -4,12 +4,15 @@
 }
 
 body {
-  background-color: black;
-  color: white;
   margin: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // background-color: #E7E0D0;
+}
+
+#root>div.page {
+  background-color: #E7E0D0;
 }
 
 a {

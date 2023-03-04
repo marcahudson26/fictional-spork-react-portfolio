@@ -31,27 +31,11 @@ export default () => {
                 </div>
             </main>
             <section className="cvcta">
+                <a href="" >
+                    <img src="/pinpng.com-steampunk-png-375722.png" />
+                </a>
 
             </section>
-
-
-
-            <section className="aboutlower">
-                <div>
-
-                    <h3>Web Design</h3>
-                </div>
-                <div>
-
-                    <h3>Responsive Design</h3>
-                </div>
-                <div>
-
-                    <h3>Web Developer</h3>
-                </div>
-            </section>
-
-
         </>
     )
 }
