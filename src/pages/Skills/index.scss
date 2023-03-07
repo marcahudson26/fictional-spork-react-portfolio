@@ -1,39 +1,50 @@
+.page.skills {
+    background-image: url(../../../public/waterstain.png);
+}
+
 .tittleabout {
     display: block;
     align-items: center;
-    height: 100px;
     text-align: center;
     min-width: 740px;
+    padding-bottom: 20px;
+
+    @media (max-width: 740px) {
+        display: flex;
+        justify-content: center;
+        min-width: 200px;
+        margin-bottom: 50px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        background: transparent url(../../../public/top.svg) no-repeat;
+        width: 715px;
+        height: 90px;
+        margin: 0 auto;
+
+        @media (max-width: 740px) {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background: transparent url(../../../public/bottom.svg) no-repeat;
+        width: 447px;
+        height: 44px;
+        margin: 0 auto;
+        position: relative;
+        left: 9px;
+
+        @media (max-width: 740px) {
+            display: none;
+        }
+
+    }
 }
-
-.tittleabout::before {
-    content: '';
-    display: block;
-    background: transparent url(../../../public/top.svg) no-repeat;
-    width: 715px;
-    height: 90px;
-    margin: 0 auto;
-}
-
-.tittleabout::after {
-    content: '';
-    display: block;
-    background: transparent url(../../../public/bottom.svg) no-repeat;
-    width: 447px;
-    height: 44px;
-    margin: 0 auto;
-
-}
-
-.myskillsbody {
-    height: 900px;
-}
-
-
-
-
-
-
 
 
 
@@ -61,139 +72,45 @@
 rotate3d(0, 1, 0, 180deg)
 rotate3d(0, 1, 0, 0deg)*/
 
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.container .avatar {
-    filter: sepia(0.5);
-    width: 150px;
-    transition: all .5s ease;
-}
-
-.skills:hover .avatar {
-    opacity: 50%;
-    filter: saturate(0) sepia(0.5);
-
-}
-
-.container .avatar:hover {
-    opacity: 100%;
-    filter: saturate(1) sepia(0);
-
-}
-
-
-.skills .avatar {
-    transform: translateY(0px);
-    animation-delay: 10ms;
-    animation: float 1.4s ease-in-out infinite;
-}
-
-.skills :nth-child(1) .avatar {
-    animation-delay: 0ms;
-}
-
-.skills :nth-child(2) .avatar {
-    animation-delay: 200ms;
-}
-
-.skills :nth-child(3) .avatar {
-    animation-delay: 400ms;
-}
-
-.skills :nth-child(4) .avatar {
-    animation-delay: 600ms;
-}
-
-.skills :nth-child(5) .avatar {
-    animation-delay: 800ms;
-}
-
-.skills :nth-child(6) .avatar {
-    animation-delay: 1000ms;
-}
-
-.skills :nth-child(7) .avatar {
-    animation-delay: 1200ms;
-}
-
-.skills :nth-child(8) .avatar {
-    animation-delay: 0ms;
-}
-
-.skills :nth-child(9) .avatar {
-    animation-delay: 200ms;
-}
-
-.skills :nth-child(10) .avatar {
-    animation-delay: 400ms;
-}
-
-.skills :nth-child(11) .avatar {
-    animation-delay: 600ms;
-}
-
-.skills :nth-child(12) .avatar {
-    animation-delay: 800ms;
-}
-
-.skills :nth-child(13) .avatar {
-    animation-delay: 1000ms;
-}
-
-.skills :nth-child(14) .avatar {
-    animation-delay: 1200ms;
-}
-
-.skills :nth-child(15) .avatar {
-    animation-delay: 0ms;
-}
-
-.skills :nth-child(16) .avatar {
-    animation-delay: 200ms;
-}
-
-.skills :nth-child(17) .avatar {
-    animation-delay: 400ms;
-}
-
-.skills :nth-child(18) .avatar {
-    animation-delay: 600ms;
-}
-
-.skills :nth-child(19) .avatar {
-    animation-delay: 800ms;
-}
-
-.skills :nth-child(20) .avatar {
-    animation-delay: 1000ms;
-}
-
-.skills :nth-child(21) .avatar {
-    animation-delay: 1200ms;
-}
-
-
-.skills {
-    display: flex;
-    padding-bottom: 70px;
-}
-
-.marquee img {
-    height: 120px;
-    width: 120px;
-}
-
 .marquee {
-    overflow: hidden;
-    width: 100%;
-    padding-top: 40px;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.skills-bounce {
+    a {
+        transform: translateY(0px);
+        animation-delay: 10ms;
+        animation: float 1.4s ease-in-out infinite;
+        padding-bottom: 20px;
+
+
+        @for $i from 1 through 7 {
+            &:nth-child(#{$i}) {
+                animation-delay: -#{$i*200}ms;
+            }
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+
+    &:hover a {
+        opacity: 50%;
+        filter: saturate(0) sepia(0.5);
+    }
+
+    a {
+        filter: sepia(0.5);
+        width: 150px;
+        transition: all .5s ease;
+
+        &:hover {
+            opacity: 100%;
+            filter: saturate(1) sepia(0);
+        }
+    }
 
 }
 
@@ -201,6 +118,8 @@ rotate3d(0, 1, 0, 0deg)*/
     height: 170px;
     width: 170px;
     filter: saturate(0.5);
+
+
 }
 
 .footercontainer {
@@ -208,4 +127,27 @@ rotate3d(0, 1, 0, 0deg)*/
     justify-content: space-around;
     text-align: center;
 
+    @media (max-width: 580px) {
+        display: grid;
+
+    }
+
+}
+
+.skillscontainer {
+    display: grid;
+    gap: 50px;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto 50px auto;
+
+
+    @media (max-width: 870px) {
+        grid-template-columns: 1fr 1fr;
+        max-width: 480px;
+    }
+
+    @media (max-width: 760px) {
+        grid-template-columns: 1fr;
+    }
 }
