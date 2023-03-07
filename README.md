@@ -45,7 +45,10 @@ npm start
 - 
 
 ## Link to deployed application
-*** fill in here ***
+https://fictional-spork-react-portfolio.vercel.app
 
 ## Screenshots/ Videos
-*** fill in here ***
+![landing-page](./public/landingpage.png)
+![about-me-page](./public/aboutme%20page.png)
+![skills-page](./public/skillspage.png)
+![project-page](./public/projectpage.png)
