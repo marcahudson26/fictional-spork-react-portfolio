@@ -3,16 +3,34 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 173px;
+
     max-width: 1032px;
     margin: 0 auto;
     margin-bottom: 100px;
     background-color: #E7E0D0;
 
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+
     img {
         filter: saturate(1);
         width: 300px;
+
+        @media (max-width: 1000px) {
+            position: relative;
+            left: 182px;
+
+        }
+
+        @media (max-width: 740px) {
+            display: none;
+        }
     }
+
 
 
     h1 {
@@ -37,14 +55,35 @@
 }
 
 .main {
-
     color: black;
     padding-top: 1px;
-    max-width: 900px;
     margin: 0 auto;
     margin-bottom: 150px;
     font-size: 30px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding-right: 20px;
+    max-width: 900px;
+
+    @media (max-width: 900px) {
+        gap: 0;
+        padding: 0 50px;
+    }
+
+    img {
+        width: 300px;
+        height: 400px;
+
+        transform: scaleX(-1);
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+    }
 }
+
+// padding-left: 10px;
 
 
 .aboutlower {
@@ -71,6 +110,10 @@
     width: 715px;
     height: 90px;
     margin: 0 auto;
+
+    @media (max-width: 740px) {
+        display: none;
+    }
 }
 
 .ornament::after {
@@ -81,18 +124,34 @@
     height: 72px;
     margin: 0 auto;
 
+    @media (max-width: 740px) {
+        display: none;
+    }
+
 }
 
 .cvcta {
-
     background: transparent url(../../public/city.png) no-repeat center center;
     background-size: cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    padding: 100px 0;
 
-.cvcta img {
-    width: 420px;
+    a {
+        position: relative;
+
+        h3 {
+            position: absolute;
+            display: block;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            top: 55px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 420px;
+            filter: saturate(0.4);
+        }
+    }
 }

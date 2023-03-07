@@ -21,6 +21,9 @@ export default () => {
                 </div>
             </section>
             <main class="main ">
+                <div>
+                    <img src="/imgbin_steampunk-drawing-character-png.png" />
+                </div>
                 <div class="slide">
                     <p>As the clattering of steam-powered machinery echoes through the air, a figure emerges from the mist, a web engineer Marc Hudson with a unique set of skills and a passion for innovation.
                     </p>
@@ -29,9 +32,11 @@ export default () => {
                     <p>But it's not just about the code. This engineer understands the importance of user experience, and is constantly seeking out new ways to create engaging and intuitive interfaces. They are constantly resurrecting new trends and technologies, always striving to push the boundaries of what's possible.
                     </p>
                 </div>
+
             </main>
             <section className="cvcta">
-                <a href="" >
+                <a href="/marc-hudson-cv.pdf" target="blank" >
+                    <h3 className="button">Download my Cv</h3>
                     <img src="/pinpng.com-steampunk-png-375722.png" />
                 </a>
 
