@@ -1,0 +1,38 @@
+[
+    {
+        "image": "/screencapture-127-0-0-1-5500-index-html-2023-03-05-20_53_32.png",
+        "tittle": "Yum",
+        "content": "Our Group Project task is to build a web application that uses at least two server-side APIs, is styled with a CSS framework like Bootstrap, is deployed on GitHub Pages, is interactive with modals instead of alerts, uses client-side storage for persistent data, is responsive, has a polished user interface, has a clean code repository with good coding standards, and has a quality README with a unique name, description, technologies used, screenshot, and link to the deployed application.",
+        "link": "https://marcahudson26.github.io/symmetrical-guacamole-project1/"
+    },
+    {
+        "image": "/justfeast.gif",
+        "tittle": "Just feast",
+        "content": "This app is for randomly selecting main meals, it will then display the meals if the user is not happy with that meal it will replace that meal with another random meal. once you are happy with the selection click the I'm happy button and the shopping list for these ingredients will be imported so you know hat ingredients are needed.",
+        "link": "https://meal-planner-navy.vercel.app/"
+    },
+    {
+        "image": "/urbanscreenshot.png",
+        "tittle": "Urban Enigma",
+        "content": "this project is a team generator, once the user types npm run start in the terminal they are, meet with a welcome message and a menu they must select a manager, once they have selected the manager you can change the manager at any time, they also can add interns and engineers, once happy with the selection hit save and view, it will load up the HTML in another window, feeling a bit tired? take a break be sure to save before taking a break and have fun ;)",
+        "link": "https://github.com/marcahudson26/urban-enigma-team-manegment"
+    },
+    {
+        "image": "/weatherdash.png",
+        "tittle": "weather dashboard",
+        "content": "This application is to show my ability to make a weather forecast app using an API, when the user inputs a location the location is saved in local storage and the history button with that name, the weather today and the 5-day forecast will be rendered on the page if the location is already in local storage another button will not be rendered. If the history buttons are clicked the weather will also be displayed. If the clear history button is pressed the history will be removed and the page will re-render.",
+        "link": "https://marcahudson26.github.io/probable-potato-Weather-Dashboard/"
+    },
+    {
+        "image": "/refactor.png",
+        "tittle": "Horizon refactor",
+        "content": "Refactoring code in a dummy website to ensure it follows good accessibility practices - whilst not changing the core functionality.",
+        "link": "https://github.com/marcahudson26/curly-barnacle-refact/"
+    },
+    {
+        "image": "/screenshot.png",
+        "tittle": "Food in a rush",
+        "content": "A foodie app that provides information for cooking your own meals or ordering from your favourite restaurant. Choose between eating in or eating out, and get the information you need to enjoy your meal.",
+        "link": "https://marcahudson26.github.io/psychic-robot-project-1/"
+    }
+]

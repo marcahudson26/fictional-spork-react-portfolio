@@ -4,17 +4,19 @@ import Footer from './components/Footer';
 import Home from './pages/Home'
 import About from './pages/About'
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 function App() {
   const location = useLocation()
-  let className = "page"
+  const classNames = ["page"]
   if (location.pathname === "/") {
-    className += " home"
+    classNames.push("home")
+  } else {
+    classNames.push(location.pathname.replace(/[^a-z-]+/, ""))
   }
 
-
   return (
-    <div className={className}>
+    <div className={classNames.join(" ")}>
 
       <Header />
       <main>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
       <Footer />

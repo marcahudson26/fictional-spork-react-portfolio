@@ -1,0 +1,102 @@
+.tittleproject {
+    display: block;
+    align-items: center;
+    text-align: center;
+    min-width: 740px;
+    margin-bottom: 150px;
+
+    @media (max-width: 740px) {
+        display: flex;
+        justify-content: center;
+        min-width: 200px;
+        margin-bottom: 50px;
+    }
+}
+
+.tittleproject::before {
+    content: '';
+    display: block;
+    background: transparent url(../../../public/top.svg) no-repeat;
+    width: 715px;
+    height: 90px;
+    margin: 0 auto;
+
+    @media (max-width: 760px) {
+        display: none;
+    }
+}
+
+.tittleproject::after {
+    content: '';
+    display: block;
+    background: transparent url(../../../public/bottom.svg) no-repeat;
+    width: 447px;
+    height: 44px;
+    margin: 0 auto;
+
+    @media (max-width: 760px) {
+        display: none;
+        margin-bottom: 40px;
+    }
+
+}
+
+.projectcontainer {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 30px 30px 30px;
+    grid-template-columns: 1fr 1fr;
+
+    &:nth-child(odd)>div:first-child {
+        order: 1;
+    }
+
+    @media (max-width: 900px) {
+        grid-template-columns: 2fr;
+
+        &:nth-child(odd)>div:first-child {
+            order: 0;
+        }
+    }
+
+
+
+
+}
+
+
+.titleabout {
+    height: 400px;
+    margin-bottom: 200px;
+}
+
+
+
+.card {
+
+    background-size: cover;
+    box-shadow: 0 0 140px 10px rgba(0, 0, 0, .5);
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width: 900px) {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: -400px;
+    right: -400px;
+    bottom: -400px;
+    left: -400px;
+    background: linear-gradient(217deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0.25) 45%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+
+}
