@@ -7,4 +7,9 @@ footer {
     overflow: visible;
 
 
+    @media (max-width: 835px) {
+        background-size: cover;
+    }
+
+
 }

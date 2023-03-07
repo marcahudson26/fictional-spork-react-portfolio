@@ -1,9 +1,14 @@
 header {
-    height: 246px;
-    background: url(../../../public/pappertop.png) no-repeat;
-    background-size: 100% 325px;
-    position: relative;
-    justify-content: center;
+    background: url(../../../public/papertopo.png) no-repeat;
+    text-align: center;
+    margin-top: auto;
+    height: 174px;
+    background-size: 100% 229px;
+    overflow: visible;
+
+    @media (max-width: 835px) {
+        background-size: cover;
+    }
 
 
 
@@ -13,7 +18,7 @@ header {
 
         &::before {
             position: fixed;
-            z-index: 1;
+            z-index: 3;
             top: 0;
             left: 0;
             right: 0;
@@ -29,7 +34,7 @@ header {
             position: fixed;
             top: 1em;
             left: 1em;
-            z-index: 3;
+            z-index: 5;
             width: 2em;
             height: 2em;
             margin: 0;

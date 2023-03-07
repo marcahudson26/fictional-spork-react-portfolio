@@ -37,6 +37,10 @@ video {
     margin-right: 100px;
     position: relative;
 
+    @media (max-width: 835px) {
+        margin-right: 0;
+    }
+
 
     h1 {
         font-family: "Satisfy";

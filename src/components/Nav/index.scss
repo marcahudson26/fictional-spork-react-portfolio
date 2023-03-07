@@ -58,6 +58,8 @@ nav {
     }
 }
 
+#menu {}
+
 #menu-trigger:checked {
     +label {
         &::before {
@@ -87,6 +89,7 @@ nav {
     }
 
     ~nav {
+        z-index: 4;
         transform: translateX(0);
 
         &::before {
