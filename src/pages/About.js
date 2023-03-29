@@ -16,7 +16,7 @@ export default () => {
                     </h2>
                     <h1>Marc Hudson</h1>
                 </div>
-                <div>
+                <div className="aboutContainer">
                     <img src="/aboutheadimag.png" />
                 </div>
             </section>

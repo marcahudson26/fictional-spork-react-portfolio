@@ -25,11 +25,25 @@
             left: 182px;
 
         }
-
         @media (max-width: 740px) {
-            display: none;
+          
+       
+                display: flex;
+                left: 0;
+    
+            
         }
+
+     
     }
+    @media (max-width: 740px) {
+        .aboutContainer {
+            display: flex;
+            justify-content: center;
+        }
+    
+    }
+
 
 
 
