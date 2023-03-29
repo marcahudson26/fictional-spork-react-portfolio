@@ -6,7 +6,7 @@ import LiquidFillGauge from "react-liquid-gauge";
 
 const Meter = ({ value, name }) => {
 
-    const startColor = "blu";
+    const startColor = "blue";
     const endColor = "gray";
 
 

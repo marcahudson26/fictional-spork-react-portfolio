@@ -18,12 +18,12 @@ export default () => {
             </section>
             <section className="skillscontainer">
 
-                <Meter value={43} name="React" />
-                <Meter value={75} name="JS" />
+                <Meter value={80} name="React" />
+                <Meter value={80} name="JS" />
                 <Meter value={93} name="HTML5" />
                 <Meter value={70} name="Node" />
                 <Meter value={90} name="TDD" />
-                <Meter value={80} name="CSS" />
+                <Meter value={95} name="CSS" />
 
 
 

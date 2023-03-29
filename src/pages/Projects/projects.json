@@ -1,5 +1,11 @@
 [
     {
+        "image": "/wifi.png",
+        "tittle": "WiFinder",
+        "content": "Ultimate Wi-Fi Hot spot and hangout locator app, built using React.js, Node.js, JavaScript, Tailwind, CSS, SCSS and HTML5.",
+        "link": "https://wi-finder-app.vercel.app/"
+    },
+    {
         "image": "/screencapture-127-0-0-1-5500-index-html-2023-03-05-20_53_32.png",
         "tittle": "Yum",
         "content": "This app is to find meals to cook at home or to eat out, it will give you full recipes and instruction videos, or will wind you restaurants near you using your post code this is a WEP with lots of new features in the pipeline ",
@@ -23,12 +29,7 @@
         "content": "This application is to show my ability to make a weather forecast app using an API, when the user inputs a location the location is saved in local storage and the history button with that name, the weather today and the 5-day forecast will be rendered on the page if the location is already in local storage another button will not be rendered. If the history buttons are clicked the weather will also be displayed. If the clear history button is pressed the history will be removed and the page will re-render.",
         "link": "https://marcahudson26.github.io/probable-potato-Weather-Dashboard/"
     },
-    {
-        "image": "/refactor.png",
-        "tittle": "Horizon refactor",
-        "content": "Refactoring code in a dummy website to ensure it follows good accessibility practices - whilst not changing the core functionality.",
-        "link": "https://github.com/marcahudson26/curly-barnacle-refact/"
-    },
+  
     {
         "image": "/screenshot.png",
         "tittle": "Food in a rush",

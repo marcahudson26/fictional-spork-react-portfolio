@@ -155,3 +155,28 @@
         }
     }
 }
+
+@media (max-width: 740px) {
+    .cvcta {
+        a {
+            position: relative;
+    
+            h3 {
+                position: absolute;
+                display: block;
+                width: 100%;
+                text-align: center;
+                z-index: 1;
+                top: 46px;
+            }
+    
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 380px;
+                filter: saturate(0.4);
+            }
+        }
+
+    }
+}
